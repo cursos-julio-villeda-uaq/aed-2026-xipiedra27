@@ -7,7 +7,7 @@ namespace aed {
 double calcularSuma(const std::vector<double>& calificaciones) {
     double suma = 0.0;
     for (double calificacion : calificaciones) {
-        suma = suma + calificacion
+        suma = suma + calificacion;
     }
     return suma;
 }
