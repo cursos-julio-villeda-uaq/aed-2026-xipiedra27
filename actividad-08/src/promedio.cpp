@@ -5,17 +5,21 @@
 namespace aed {
 
 double calcularSuma(const std::vector<double>& calificaciones) {
-    // TODO: recorre el vector con un for basado en rango y devuelve la suma.
-    return 0.0;
+    double suma = 0.0;
+    for (double calificacion : calificaciones) {
+        suma = suma + calificacion
+    }
+    return suma;
 }
 
 double calcularPromedio(const std::vector<double>& calificaciones) {
     if (calificaciones.empty()) {
-        throw std::invalid_argument("No se puede promediar un vector vacío");
+        throw std::invalid_argument("No se puede promediar un vector vacio");
     }
 
-    // TODO: usa calcularSuma y devuelve el promedio.
-    return 0.0;
+    double suma = calcularSuma(calificaciones);
+    double promedio = suma / calificaciones.size();
+    return promedio;
 }
 
 }  // namespace aed
