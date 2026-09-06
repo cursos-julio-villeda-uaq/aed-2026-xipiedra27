@@ -2,7 +2,7 @@
 
 long long sumaIterativa(unsigned int n) {
     long long suma=0; 
-    for(unsigned int i=0; i>0; i--){
+    for(unsigned int i=n; i>0; i--){
         suma = suma+i;
     }
     return suma;
