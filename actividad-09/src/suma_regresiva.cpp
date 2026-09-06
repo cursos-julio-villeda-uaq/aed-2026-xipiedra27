@@ -5,7 +5,7 @@ long long sumaIterativa(unsigned int n) {
     for(unsigned int i=0; i>0; i--){
         suma = suma+i;
     }
-    return 0;
+    return suma;
 }
 
 long long sumaRecursiva(unsigned int n) {
